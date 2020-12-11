@@ -6,6 +6,7 @@ import { HelloComponent } from './hello/hello.component';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { StudentComponent } from './student/student.component';
 import { AvgPipe } from './avg.pipe';
+import { UserItemsComponent } from './user-items/user-items.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { AvgPipe } from './avg.pipe';
     HelloComponent,
     PipeDemoComponent,
     StudentComponent,
-    AvgPipe
+    AvgPipe,
+    UserItemsComponent
   ],
   imports: [
     BrowserModule

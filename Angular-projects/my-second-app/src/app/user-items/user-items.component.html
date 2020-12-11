@@ -1,0 +1,21 @@
+<p>user-items works!</p>
+<div>
+    <h1>Structural Directive Demo</h1>
+    <h3 *ngIf = "message">
+        Message is {{message}}
+    </h3>
+    <h3 *ngIf = "isValid">
+        Is VAlid is {{isValid}}
+    </h3>
+    
+    
+    <hr />
+    <table border="1">
+        <tr>
+            <th>Id</th><th>Name</th><th>Salary</th><th>state</th><th>City</th>
+        </tr>
+        <tr *ngFor="let employee of employees" >
+            <td>{{employee.id}}</td><td>{{employee.name}}</td> <td>{{employee.salary}}</td> <td >{{employee.address.state}}</td><td>{{employee.address.city}}</td>
+        </tr>
+    </table>
+</div>
