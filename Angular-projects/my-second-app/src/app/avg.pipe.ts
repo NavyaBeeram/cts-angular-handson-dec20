@@ -5,10 +5,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AvgPipe implements PipeTransform {
 
-  transform(value: number,args: any){
-    if(args >= 70)
+  transform(value: number){
+    if(value >= 70)
       return 'First class';
-    else if(args>=35 && args<70)
+    else if(value>=35 && value<70)
       return 'Pass';
     else
       return 'Fail';
