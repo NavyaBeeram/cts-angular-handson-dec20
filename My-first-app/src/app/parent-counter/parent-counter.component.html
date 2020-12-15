@@ -1,9 +1,12 @@
-<p>parent-counter works!</p>
 <div>
     <app-child-counter  [username] = "name"
+                        [LikesAfterClear] = "likes"
+                        [DislikesAfterClear] = "dislikes"
                         (likesCount) = "likes=$event"
                          (dislikesCount) = "dislikes=$event">
     </app-child-counter>
-    <h1>Total likes : <span >{{likes}}</span></h1>
-    <h1>Total dislikes : <span >{{dislikes}}</span></h1>
+    <h1>Total likes : {{likes}}</h1>
+    <h1>Total dislikes :{{dislikes}}</h1>
 </div>
+
+<button (click) = "clearOnClick()">Clear</button>
